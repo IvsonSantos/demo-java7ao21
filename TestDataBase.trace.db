@@ -1,0 +1,8 @@
+2023-10-04 12:24:16.569226+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table testando [*]id integer"; SQL statement:
+create table testando id integer [42000-224]
+2023-10-04 12:24:31.325869+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table testando  \000d\000a   [*]id integer\000d\000a "; SQL statement:
+create table testando  
+   id integer
+  [42000-224]
