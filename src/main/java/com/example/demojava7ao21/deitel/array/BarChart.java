@@ -1,4 +1,4 @@
-package com.example.demojava7ao21.deitel;
+package com.example.demojava7ao21.deitel.array;
 
 public class BarChart {
 
