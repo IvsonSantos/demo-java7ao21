@@ -1,9 +1,14 @@
 package com.example.demojava7ao21.deitel.exception;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class DivideByZeroWithExceptionHandling {
+
+    private static final Logger LOG = LoggerFactory.getLogger(DivideByZeroWithExceptionHandling.class);
 
     // demonstra o lançamento de uma exceção quando ocorre uma divisão por zero
     public static int quotient(int numerator, int denominator) throws ArithmeticException {

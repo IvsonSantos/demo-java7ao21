@@ -1,28 +1,34 @@
 package com.example.demojava7ao21.deitel.exception;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class DesempilhamentoThrowable {
+
+    private static final Logger LOG = LoggerFactory.getLogger(DesempilhamentoThrowable.class);
 
     public static void main(String[] args) {
         try {
             method1();
         } catch (Exception exception) // captura a exceção lançada em method1
         {
-            System.err.printf("%s%n%n", exception.getMessage());
+            LOG.error(exception.getMessage());
             exception.printStackTrace();
 
             // obtém informações de rastreamento de pilha
             StackTraceElement[] traceElements = exception.getStackTrace();
 
-            System.out.printf("%nStack trace from getStackTrace:%n");
-            System.out.println("Class\t\tFile\t\t\tLine\tMethod");
-
             // faz um loop por traceElements para obter a descrição da exceção
             for (StackTraceElement element : traceElements) {
-                System.out.printf("%s\t", element.getClassName());
-                System.out.printf("%s\t", element.getFileName());
-                System.out.printf("%s\t", element.getLineNumber());
-                System.out.printf("%s%n", element.getMethodName());
+
+                // element.getClassName()
+
+                LOG.error(element.getFileName() + " " +
+                          element.getLineNumber() + " " +
+                          element.getMethodName()
+                );
             }
+
         }
     } // fim de main
 
