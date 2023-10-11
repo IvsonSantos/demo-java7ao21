@@ -1,4 +1,4 @@
-package com.example.demojava7ao21.java21.string;
+package com.example.demojava7ao21.java17.string;
 
 public class MultilineStringTest {
 

@@ -1,4 +1,4 @@
-package com.example.demojava7ao21.java21.newswitch;
+package com.example.demojava7ao21.java17.newswitch;
 
 import java.time.DayOfWeek;
 

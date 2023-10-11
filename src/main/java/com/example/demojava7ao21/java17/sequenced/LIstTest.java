@@ -1,4 +1,4 @@
-package com.example.demojava7ao21.java21.sequenced;
+package com.example.demojava7ao21.java17.sequenced;
 
 import java.util.ArrayList;
 
