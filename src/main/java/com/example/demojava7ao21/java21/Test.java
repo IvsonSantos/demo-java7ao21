@@ -1,7 +1,5 @@
 package com.example.demojava7ao21.java21;
 
-import static java.lang.StringTemplate.STR;
-
 public class Test {
 
     public static void main(String[] args) {
