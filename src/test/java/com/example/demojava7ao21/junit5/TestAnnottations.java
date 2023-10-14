@@ -64,4 +64,13 @@ class TestAnnottations {
         );
     }
 
+    @Test
+    void shouldThrowException() {
+        Throwable exception = Assertions.assertThrows(UnsupportedOperationException.class, () -> {
+            throw new UnsupportedOperationException("Not supported");
+        });
+        Assertions.assertEquals("Not supported", exception.getMessage());
+    }
+
+
 }
