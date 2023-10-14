@@ -16,10 +16,26 @@ class TestAnnottations {
         log.info("@BeforeEach - executes before each test method in this class");
     }
 
+    @AfterEach
+    void tearDown() {
+        log.info("@AfterEach - executed after each test method.");
+    }
+
+    @AfterAll
+    static void done() {
+        log.info("@AfterAll - executed after all test methods.");
+    }
+
     @DisplayName("Single test successful")
     @Test
     void testSingleSuccessTest() {
         log.info("Success");
+    }
+
+    @DisplayName("Single test 2 successful")
+    @Test
+    void testSingleSuccessTest2() {
+        log.info("Success 2");
     }
 
     @Test
