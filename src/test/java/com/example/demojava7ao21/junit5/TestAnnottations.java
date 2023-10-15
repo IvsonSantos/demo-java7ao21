@@ -58,9 +58,9 @@ class TestAnnottations {
     void groupAssertions() {
         int[] numbers = {0, 1, 2, 3, 4};
         Assertions.assertAll("numbers",
-                () -> Assertions.assertEquals(numbers[0], 1),
+                () -> Assertions.assertEquals(numbers[0], 0),
                 () -> Assertions.assertEquals(numbers[3], 3),
-                () -> Assertions.assertEquals(numbers[4], 1)
+                () -> Assertions.assertEquals(numbers[4], 4)
         );
     }
 
