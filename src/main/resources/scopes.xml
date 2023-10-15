@@ -6,4 +6,6 @@
 
     <bean id="personSingleton" class="com.example.demojava7ao21.singleton.Person" scope="singleton"/>
 
+    <bean id="personPrototype" class="com.example.demojava7ao21.singleton.Person" scope="prototype"/>
+
 </beans>

@@ -1,4 +1,4 @@
-package com.example.demojava7ao21.configuration;
+package com.example.demojava7ao21.beans;
 
 import lombok.Getter;
 import lombok.Setter;
