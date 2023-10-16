@@ -1,4 +1,4 @@
-package com.example.demojava7ao21.configuration.beans;
+package com.example.demojava7ao21.beans;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
