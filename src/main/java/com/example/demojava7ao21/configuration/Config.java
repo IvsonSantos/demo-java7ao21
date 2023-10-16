@@ -1,8 +1,8 @@
 package com.example.demojava7ao21.configuration;
 
-import com.example.demojava7ao21.beans.Engine;
-import com.example.demojava7ao21.beans.Transmission;
-import com.example.demojava7ao21.singleton.Person;
+import com.example.demojava7ao21.configuration.beans.Engine;
+import com.example.demojava7ao21.configuration.beans.Transmission;
+import com.example.demojava7ao21.spring.singleton.Person;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

@@ -1,6 +1,6 @@
 package com.example.demojava7ao21.service;
 
-import com.example.demojava7ao21.beans.Formatter;
+import com.example.demojava7ao21.configuration.beans.Formatter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;

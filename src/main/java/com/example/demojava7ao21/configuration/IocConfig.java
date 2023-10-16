@@ -1,7 +1,7 @@
 package com.example.demojava7ao21.configuration;
 
-import com.example.demojava7ao21.inversrionofcontrol.Address;
-import com.example.demojava7ao21.inversrionofcontrol.Company;
+import com.example.demojava7ao21.spring.inversrionofcontrol.Address;
+import com.example.demojava7ao21.spring.inversrionofcontrol.Company;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

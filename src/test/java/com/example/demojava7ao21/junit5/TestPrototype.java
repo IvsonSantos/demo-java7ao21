@@ -1,6 +1,6 @@
 package com.example.demojava7ao21.junit5;
 
-import com.example.demojava7ao21.singleton.Person;
+import com.example.demojava7ao21.spring.singleton.Person;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
