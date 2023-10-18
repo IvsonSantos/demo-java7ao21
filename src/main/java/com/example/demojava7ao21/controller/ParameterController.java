@@ -9,13 +9,13 @@ import java.util.Optional;
 public class ParameterController {
 
     @GetMapping("/api")
-    @ResponseBody
+    @ResponseBody // restcontroller ja inclui o body, nao necessita aqui
     public String getFoos(@RequestParam(required = false) String id) {
         return "ID: " + id;
     }
 
     @GetMapping("/api-opt")
-    @ResponseBody
+    //@ResponseBody
     public String getFoos(@RequestParam Optional<String> id){
         return "ID: " + id.orElseGet(() -> "not provided");
     }
