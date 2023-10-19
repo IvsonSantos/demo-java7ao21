@@ -30,6 +30,7 @@ public class PersonController {
         dto.setBooleanValue(true);
         dto.setStringValue("string");
         dto.setIntValue(2);
+        dto.setName("nome");
         return ResponseEntity.ok(dto);
 
     }
