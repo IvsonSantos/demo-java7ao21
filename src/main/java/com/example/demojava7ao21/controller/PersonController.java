@@ -1,5 +1,6 @@
 package com.example.demojava7ao21.controller;
 
+import com.example.demojava7ao21.dto.PersonDto;
 import com.example.demojava7ao21.model.Person;
 import com.example.demojava7ao21.repository.PersonRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -22,4 +23,15 @@ public class PersonController {
         repository.save(person);
         return ResponseEntity.ok(person);
     }
+
+    @GetMapping
+    public ResponseEntity<PersonDto> getDto() {
+        PersonDto dto = new PersonDto();
+        dto.setBooleanValue(true);
+        dto.setStringValue("string");
+        dto.setIntValue(2);
+        return ResponseEntity.ok(dto);
+
+    }
+
 }
