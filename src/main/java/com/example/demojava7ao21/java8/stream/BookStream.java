@@ -3,6 +3,7 @@ package com.example.demojava7ao21.java8.stream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class BookStream {
@@ -17,5 +18,18 @@ public class BookStream {
             .collect(Collectors.toMap(Book::getIsbn, Book::getName));
 
         System.out.println(listToMap);
+
+
+        // duplicate key exception
+        //Map<Integer, String> listToMapWithDuplicationKey = bookList.stream()
+        //        .collect(Collectors.toMap(Book::getReleaseYear, Book::getName));
+
+        // to solve it
+        Map<Integer, Book> listToMapWithDuplicationKey = bookList.stream()
+                .collect(Collectors.toMap(Book::getReleaseYear, Function.identity(), (existing, replacement) -> existing));
+
+
+        System.out.println(listToMapWithDuplicationKey);
     }
+
 }
