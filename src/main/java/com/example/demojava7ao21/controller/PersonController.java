@@ -10,6 +10,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Collection;
+
 @RestController
 @RequestMapping("/person")
 @Slf4j
@@ -43,6 +45,11 @@ public class PersonController {
     @GetMapping("/nome")
     public Page<Person> getPersonNome(String nome, @RequestParam("pagina") int pagina) {
         return service.findByPerson("ivson", pagina);
+    }
+
+    @GetMapping("/ivson")
+    public Collection<Person> getPerson(String nome) {
+        return repository.findAllUsers();
     }
 
 }
