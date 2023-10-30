@@ -17,4 +17,7 @@ public interface PersonRepository extends JpaRepository<Person, Integer> {
     @Query(value = "SELECT * FROM Person p WHERE p.nome = 'ivson ddd'", nativeQuery = true)
     Collection<Person> findAllUsers();
 
+    @Query(value = "SELECT p FROM Person p WHERE p.nome = 'ivson fff'")
+    Collection<Person> findAllUsers2();
+
 }

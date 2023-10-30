@@ -52,4 +52,10 @@ public class PersonController {
         return repository.findAllUsers();
     }
 
+    @GetMapping("/ivson2")
+    public Collection<Person> getPerson2(String nome) {
+        return repository.findAllUsers2();
+    }
+
+
 }
