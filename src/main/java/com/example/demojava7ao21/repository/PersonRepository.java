@@ -20,4 +20,7 @@ public interface PersonRepository extends JpaRepository<Person, Integer> {
     @Query(value = "SELECT p FROM Person p WHERE p.nome = 'ivson fff'")
     Collection<Person> findAllUsers2();
 
+    @Query(value = "SELECT p FROM Person p ORDER BY id")
+    Page<Person> findAllPersonWithPagination(Pageable pageable);
+
 }

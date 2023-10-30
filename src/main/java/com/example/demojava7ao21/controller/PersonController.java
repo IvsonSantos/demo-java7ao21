@@ -7,6 +7,9 @@ import com.example.demojava7ao21.service.PersonService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -55,6 +58,12 @@ public class PersonController {
     @GetMapping("/ivson2")
     public Collection<Person> getPerson2(String nome) {
         return repository.findAllUsers2();
+    }
+
+    @GetMapping("/page")
+    public Page<Person> getPersonPage() {
+        Pageable firstPageWithTwoElements = PageRequest.of(0, 2);
+        return repository.findAllPersonWithPagination(firstPageWithTwoElements);
     }
 
 
