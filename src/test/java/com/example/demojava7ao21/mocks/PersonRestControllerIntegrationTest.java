@@ -9,21 +9,20 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(
-        webEnvironment = SpringBootTest.WebEnvironment.MOCK,
-        classes = DemoJava7ao21Application.class)
+    webEnvironment = SpringBootTest.WebEnvironment.MOCK,
+    classes = DemoJava7ao21Application.class)
 @AutoConfigureMockMvc
-@TestPropertySource(
-        locations = "classpath:application-integrationtest.properties")
-public class EmployeeRestControllerIntegrationTest {
+@TestPropertySource(locations = "classpath:application-integrationtest.properties")
+public class PersonRestControllerIntegrationTest {
 
     @Test
-    public void givenRequestHasBeenMade_whenMeetsAllOfGivenConditions_thenCorrect() throws Exception {
+    public void givenRequestHasBeenMade_whenMeetsAllOfGivenConditions_thenCorrect() {
         MediaType contentType = new MediaType(MediaType.APPLICATION_JSON.getType(),
-                MediaType.APPLICATION_JSON.getSubtype(), Charset.forName("utf8"));
+                MediaType.APPLICATION_JSON.getSubtype(), StandardCharsets.UTF_8);
     }
 
 }

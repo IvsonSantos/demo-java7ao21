@@ -12,7 +12,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class EmployeeServiceImplIntegrationTest {
+public class PersonServiceImplIntegrationTest {
 
     @Autowired
     private PersonService personService;
@@ -22,4 +22,20 @@ public class EmployeeServiceImplIntegrationTest {
         Page<Person> page = personService.findByPerson("ivson", 0);
         Assertions.assertNotNull(page);
     }
+
+    /*
+    @Test
+    public void testRepository() {
+        Page<Person> page = personService.findByPerson("ivson", 0);
+
+        Mockito.when(personRepository.findByNomeContaining(Mockito.anyString(), Mockito.any()))
+                .thenReturn(page);
+
+        Page<Person> list = personRepository.findByNomeContaining("teste", Pageable.ofSize(4));
+
+        Assertions.assertNotNull(list);
+    }
+
+     */
+
 }

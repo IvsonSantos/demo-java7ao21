@@ -1,8 +1,7 @@
 package com.example.demojava7ao21.model;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -12,6 +11,8 @@ import java.time.LocalDateTime;
 @Table(name = "PERSON")
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Person {
 
     @Id
