@@ -1,4 +1,4 @@
-package com.example.demojava7ao21.component;
+package com.example.demojava7ao21.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Profile;

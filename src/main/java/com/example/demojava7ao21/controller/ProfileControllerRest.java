@@ -1,6 +1,6 @@
 package com.example.demojava7ao21.controller;
 
-import com.example.demojava7ao21.component.ProfileConfig;
+import com.example.demojava7ao21.config.ProfileConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
