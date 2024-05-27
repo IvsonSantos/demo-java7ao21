@@ -30,7 +30,7 @@ public class PersonController {
         Person person = new Person();
         person.setNome("Teste");
         repository.save(person);
-        return ResponseEntity.ok(person);
+        return ResponseEntity.noContent().build();
     }
 
     @GetMapping
@@ -40,7 +40,7 @@ public class PersonController {
         dto.setStringValue("string");
         dto.setIntValue(2);
         dto.setName("nome");
-        return ResponseEntity.ok(dto);
+        return ResponseEntity.notFound().build();
 
     }
 

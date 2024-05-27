@@ -8,6 +8,7 @@ public class Endereco {
     String logradouro;
     String bairro;
     String localidade;
+    String uf;
 
     @Override
     public String toString() {

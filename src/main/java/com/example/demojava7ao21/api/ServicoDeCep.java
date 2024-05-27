@@ -26,7 +26,7 @@ public class ServicoDeCep {
             String jsonEmString = Util.converteJsonEmString(resposta);
 
             Gson gson = new Gson();
-            return gson.fromJson(jsonEmString, Endereco.class);
+           return gson.fromJson(jsonEmString, Endereco.class);
         } catch (Exception e) {
             throw new Exception("ERRO: " + e);
         }
